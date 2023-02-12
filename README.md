@@ -6,6 +6,7 @@ For use in After Effects (create_null.jsx)
 <p align="center">
   <img src="demo.gif" alt="animated" />
 </p>
+
 Shamiko model by [@norm_sNs](https://twitter.com/norm_sNs)
 
 ## Step 0: Create new **Conda** environment
