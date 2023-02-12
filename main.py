@@ -196,6 +196,11 @@ def main():
     cap.release()
     if isSaveVideo:
         out.release()
+    
+    if isSaveCSV:
+        utils.append_line_to_top(out_csv_path,
+            "frame_time,x,y,x_rotation,y_rotation,z_rotation,size")
+    
     print("Success!")
     return
     

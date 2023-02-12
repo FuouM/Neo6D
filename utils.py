@@ -95,13 +95,13 @@ def compute_euler_angles_from_rotation_matrices(rotation_matrices,
     # Return the Euler angles
     return out_euler
 
-def write_data_to_file(video_path, frame_time, tdx, tdy, yaw, pitch, roll, size):
+def write_data_to_file(video_path, frame_time, tdx, tdy, x_rotation, y_rotation, z_rotation, size):
     # create a file name based on the video file name
     file_name = os.path.splitext(os.path.basename(video_path))[0] + '.csv'
     
     with open(file_name, 'a') as f:
         # write the values to the file
-        f.write(f"{frame_time},{tdx},{tdy},{yaw[0]},{pitch[0]},{roll[0]},{size}\n")
+        f.write(f"{frame_time},{tdx},{tdy},{x_rotation[0]},{y_rotation[0]},{z_rotation[0]},{size}\n")
 
 def append_line_to_top(file_path, new_line):
     with open(file_path, 'r') as f:
@@ -109,12 +109,3 @@ def append_line_to_top(file_path, new_line):
 
     with open(file_path, 'w') as f:
         f.write(new_line + '\n' + content)
-
-
-def remove_empty_newline(file_path):
-    with open(file_path, 'rb+') as file:
-        file.seek(-1, os.SEEK_END)
-        last_char = file.read(1)
-        if last_char == b'\n':
-            file.seek(-1, os.SEEK_END)
-            file.truncate()
