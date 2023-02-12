@@ -1,0 +1,3 @@
+[submodule "RepVGG"]
+	path = RepVGG
+	url = https://github.com/DingXiaoH/RepVGG

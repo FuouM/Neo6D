@@ -1,2 +1,2 @@
 # Neo6D
-Python-based 6D headpose estimation for video editing (Re-implementation for educational purposes)
+6D headpose estimation for video editing (Re-implementation for educational purposes) based on https://github.com/thohemp/6DRepNet
