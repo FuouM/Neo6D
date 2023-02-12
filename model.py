@@ -1,7 +1,7 @@
 import math
 import torch
 from torch import nn
-from RepVGG.repvgg import get_RepVGG_func_by_name
+from repvgg import get_RepVGG_func_by_name
 import utils
 
 class SixDRepNet(nn.Module):
