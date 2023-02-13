@@ -1,6 +1,6 @@
 # Neo6D
 
-## 6D headpose estimation for video editing (Re-implementation for educational purposes) based on https://github.com/thohemp/6DRepNet
+## 6D headpose estimation for video editing (Simplified) based on https://github.com/thohemp/6DRepNet
 
 For use in After Effects (create_null.jsx)
 <p align="center">
@@ -9,7 +9,7 @@ For use in After Effects (create_null.jsx)
 
 Shamiko model by [@norm_sNs](https://twitter.com/norm_sNs)
 
-## Step 0: Create new **Conda** environment
+## Step 0: Create new **Conda** environment (Optional)
 
 ## Step 1: Install requirements
 Note: Makes sure you have **CUDA** and installed **GPU** version of torch
